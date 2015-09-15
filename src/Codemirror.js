@@ -1,4 +1,13 @@
 var CM = require('codemirror');
+
+require('codemirror/mode/htmlmixed/htmlmixed');
+
+require('codemirror/addon/edit/closetag');
+require('codemirror/addon/edit/matchbrackets');
+require('codemirror/addon/edit/matchtags');
+
+require('codemirror/addon/search/search');
+
 var React = require('react');
 
 var CodeMirror = React.createClass({
